@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Email" value="abgavali9966@gmail.com"/>
+    <parameter name="Address" value="Ichalkaranji"/>
+    <parameter name="FirstName" value="Abhishek"/>
+    <parameter name="LastName" value="Gavali"/>
+    <parameter name="ConfirmPass" value="Pqrs@1234"/>
+    <parameter name="Age" value="24"/>
+    <parameter name="Password" value="Pqrs@1234"/>
+    <classes>
+      <class name="test.CheckOutTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="checkout"/>
+        </methods>
+      </class> <!-- test.CheckOutTest -->
+      <class name="test.PaymentTest">
+        <methods>
+          <include name="payment"/>
+        </methods>
+      </class> <!-- test.PaymentTest -->
+      <class name="test.SignUpTest">
+        <methods>
+          <include name="singup" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.SignUpTest -->
+      <class name="test.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
